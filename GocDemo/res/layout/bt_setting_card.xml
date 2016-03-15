@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.-->
+
+
+<!-- Layout for the Phone app's IccNetworkDepersonalizationPanel. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical"
+    android:paddingEnd="20dip"
+    android:paddingStart="20dip" 
+     android:background="@color/darker_gray">
+
+    <RelativeLayout
+        android:id="@+id/device_name_tx"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/darker_gray"
+        android:layout_margin="@dimen/dialpad_vertical_margin">
+	
+        <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"	
+		    android:layout_weight="6">
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:gravity="center_vertical"
+		            android:text="@string/device_name"
+		            android:textSize="40sp"
+		            android:textColor="@android:color/white"
+		            android:background="?android:attr/selectableItemBackground"
+		            android:layout_weight="4"
+		             />
+		        <TextView
+		            android:id="@+id/device_name"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:gravity="center_vertical"
+		            android:text="@string/device_name_info"
+		            android:textSize="20sp"
+		            android:textColor="@android:color/darker_gray"
+		            android:background="?android:attr/selectableItemBackground"
+		            android:layout_weight="2"
+		             />
+		</LinearLayout>  
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:src="@drawable/btn_radio" />
+    </RelativeLayout>
+
+    <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="1px"
+		    android:background="@android:color/white"
+		    android:orientation="horizontal"    /> 
+		    
+    <RelativeLayout
+        android:id="@+id/pin_password_tx"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/darker_gray"
+        android:layout_margin="@dimen/dialpad_vertical_margin" >
+
+        <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"	
+		    android:layout_weight="6">
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:gravity="center_vertical"
+		            android:background="?android:attr/selectableItemBackground"
+		            android:text="@string/pin_password"
+		            android:textSize="40sp"
+		            android:textColor="@android:color/white" 
+		            android:layout_weight="4"/>
+		        
+		        <TextView
+		            android:id="@+id/pin_code"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:gravity="center_vertical"
+		            android:background="?android:attr/selectableItemBackground"
+		            android:text="@string/pin_password_info"
+		            android:textSize="20sp"
+		            android:textColor="@android:color/darker_gray" 
+		            android:layout_weight="2"/>
+		</LinearLayout>  
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:src="@drawable/btn_radio" />
+    </RelativeLayout>
+
+    
+    <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="1px"
+		    android:background="@android:color/white"
+		    android:orientation="horizontal"    /> 
+    
+    <RelativeLayout
+        android:id="@+id/auto_connect"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/darker_gray"
+        android:layout_margin="@dimen/dialpad_vertical_margin" >
+	
+        <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"	
+		    android:layout_weight="6">
+		    <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:gravity="center_vertical"
+	            android:text="@string/auto_connect"
+	            android:textSize="40sp"
+	            android:background="?android:attr/selectableItemBackground" 
+	            android:textColor="@android:color/white"
+	            android:layout_weight="4"/>
+	
+	        
+	        
+	   </LinearLayout>  
+	        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:src="@drawable/btn_radio" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="1px"
+		    android:background="@android:color/white"
+		    android:orientation="horizontal"    /> 
+
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@color/darker_gray"
+        android:layout_margin="@dimen/dialpad_vertical_margin" />
+
+</LinearLayout>

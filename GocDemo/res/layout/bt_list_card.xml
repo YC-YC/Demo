@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Layout for the Phone app's IccNetworkDepersonalizationPanel. -->
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/phone_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dialpad_vertical_margin_left"
+        android:layout_marginTop="@dimen/dialpad_vertical_margin"
+         android:layout_weight="80"
+        android:orientation="horizontal" 
+         android:background="@color/darker_gray">
+
+       <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/darker_gray"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/list_Button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_settings_notifications" 
+                android:clickable="false"
+                   />
+                  
+             <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:background="@android:color/white"
+		    android:orientation="horizontal"    /> 
+            
+            <Button
+                android:id="@+id/scan_Button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/Search_Device"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:background="@android:color/white"
+		    android:orientation="horizontal"    /> 
+            
+            <Button
+                android:id="@+id/disconnect_Button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/Device_disconnect"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            
+            <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:background="@android:color/white"
+		    android:orientation="horizontal"    /> 
+
+            <Button
+                android:id="@+id/connect_Button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/Device_Auto_Connect"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            
+            <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:background="@android:color/white"
+		    android:orientation="horizontal"    /> 
+             <!-- Keypad section -->
+        </LinearLayout>
+        
+        <LinearLayout
+	        android:id="@+id/digits_container"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="@dimen/dialpad_vertical_margin_left"
+	        android:layout_marginTop="@dimen/dialpad_vertical_margin"
+	        android:layout_weight="6"
+	        android:background="@color/darker_gray"
+	        android:gravity="left"
+	        android:orientation="vertical" >
+			
+            	
+            <LinearLayout
+	            android:layout_height="wrap_content"
+	            android:layout_width="match_parent"
+	            android:background="@color/lighter_gray"
+	            android:orientation="horizontal"         >
+	               
+            	<TextView
+            	    android:id="@+id/device_list_info"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:background="@color/lighter_gray"
+            	    android:text="@string/Device_list_info"
+            	    android:textSize="15sp" />
+            	
+            	<TextView
+            	    android:id="@+id/searching_device"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_alignParentRight="true"
+            	    android:background="@color/lighter_gray"
+            	    android:text="@string/Device_Searching"
+            	    android:textSize="15sp" 
+            	    android:visibility="invisible"  />
+            	           	
+            </LinearLayout>	
+            
+		         <ListView
+		             android:id="@+id/DeviceListView"
+		             android:layout_width="match_parent"
+		             android:layout_height="match_parent" > 
+		         </ListView>
+
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.-->
+
+
+<!--
+     The grid of buttons used in the onscreen DTMF dialpad;
+     see dtmf_twelve_key_dialer_view.xml. -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/phone_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dialpad_vertical_margin_left"
+        android:layout_marginTop="@dimen/dialpad_vertical_margin"
+         android:layout_weight="80"
+        android:orientation="horizontal" 
+        android:background="@color/darker_gray">
+
+        <LinearLayout
+            android:id="@+id/callphone_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dialpad_vertical_margin_left"
+            android:layout_marginTop="@dimen/dialpad_vertical_margin"
+            android:layout_weight="1"
+            android:background="@color/darker_gray"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/calldialButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/call_contact" />
+
+            <ImageButton
+                android:id="@+id/callhandupButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_lockscreen_decline_normal" />
+
+            <ImageButton
+                android:id="@+id/callmic_muteButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_voice_search" />
+
+            <ImageButton
+                android:id="@+id/callspeaker_muteButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_volume_small" />
+        </LinearLayout>
+      <LinearLayout 
+	    android:id="@+id/calldigits_container"
+	    android:layout_width="0dp"
+	    android:layout_weight="6"
+	    android:layout_height="match_parent"
+	    android:layout_marginRight="@dimen/dialpad_vertical_margin_left"
+	    android:layout_marginTop="@dimen/dialpad_vertical_margin"
+	    android:orientation="vertical" >
+
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="0px"
+		        android:background="@color/darker_gray"
+		        android:layout_margin="@dimen/dialpad_vertical_margin"
+		        android:layout_weight="@integer/dialpad_layout_weight_digits" >
+		
+		        <EditText
+		            android:id="@+id/calldigits"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            android:background="@color/darker_gray"
+		            android:focusableInTouchMode="false"
+		            android:gravity="center"
+		            android:nextFocusRight="@+id/deleteButton"
+		            android:scrollHorizontally="true"
+		            android:textAppearance="@style/DialtactsDigitsTextAppearance"
+		            android:textColor="@android:color/white" />
+		
+		    </LinearLayout>
+
+	
+		    <LinearLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:background="@color/darker_gray" 
+				    android:gravity="center"
+				      >
+		    	
+		        <TextView
+		            android:id="@+id/call_status"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:textColor="@color/snow"
+		            android:textSize="30sp" 
+		            android:text="@string/Call_status"/>
+		    
+		    </LinearLayout>
+		    
+		    
+		    
+		    <LinearLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:background="@color/darker_gray" 
+				    android:gravity="center"
+				     >
+		    	
+		        <ImageView 
+		            android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:src="@drawable/people"
+				    android:gravity="center"
+		            />
+		    
+		    </LinearLayout>
+		    
+		    
+		    <LinearLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:background="@color/darker_gray" 
+				    android:gravity="center"   >
+		    
+			    <Chronometer
+					 android:id="@+id/chronometer"
+				     android:layout_width="wrap_content" 
+				     android:layout_height="wrap_content" 
+				     android:textColor="@color/snow"
+				     android:textSize="20sp"
+				/>
+			    
+		    </LinearLayout>
+		    
+	    	
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="0px"
+		        android:background="@color/darker_gray"   >
+		
+		        <EditText
+		            android:id="@+id/calldigits"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            android:background="@color/darker_gray"
+		            android:focusableInTouchMode="false"
+		            android:gravity="center"
+		            android:nextFocusRight="@+id/deleteButton"
+		            android:scrollHorizontally="true"
+		            android:textAppearance="@style/DialtactsDigitsTextAppearance"
+		            android:textColor="@android:color/white" />
+		
+		    </LinearLayout>
+		    
+		    
+      		
+		    <LinearLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:background="@color/darker_gray" 
+				    android:gravity="center"
+				      >
+		    	
+		        <TextView
+		            android:id="@+id/call_people"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:textColor="@color/snow"
+		            android:textSize="30sp" 
+		            android:text="@string/Call_people"/>
+		    
+		    </LinearLayout>
+		    
+		    
+		    <LinearLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:background="@color/darker_gray" 
+				    android:gravity="center"
+				      >
+		    	
+		        <TextView
+		            android:id="@+id/call_people_num"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:textColor="@color/snow"
+		            android:textSize="30sp" 
+		            android:text="@string/Call_people_num"/>
+		    
+		    </LinearLayout>
+		    
+		<TableLayout
+        android:id="@+id/dialpad"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="@integer/dialpad_layout_weight_dialpad"
+        android:layoutDirection="ltr"
+        android:paddingBottom="10dip"
+        android:paddingEnd="5dip"
+        android:paddingStart="5dip" />    
+		    
+		    
+	</LinearLayout>
+
+</LinearLayout>

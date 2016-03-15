@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">BtPhone</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_call_log">CallLog</string>
+    <string name="title_activity_dial">DialActivity</string>
+    <string name="title_activity_music">MusicActivity</string>
+    <string name="title_activity_service">ServiceActivity</string>
+    <string name="title_activity_blue_toot_sevice">BlueTootSeviceActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+   <!-- String describing the image on ImageButton one
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_one">one</string>
+
+    <!-- String describing the image on ImageButton two
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_two">two</string>
+
+    <!-- String describing the image on ImageButton three
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_three">three</string>
+
+    <!-- String describing the image on ImageButton four
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_four">four</string>
+
+    <!-- String describing the image on ImageButton five
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_five">five</string>
+
+    <!-- String describing the image on ImageButton six
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_six">six</string>
+
+    <!-- String describing the image on ImageButton seven
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_seven">seven</string>
+
+    <!-- String describing the image on ImageButton eight
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_eight">eight</string>
+
+    <!-- String describing the image on ImageButton nine
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_nine">nine</string>
+
+    <!-- String describing the image on ImageButton star
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_star">star</string>
+
+    <!-- String describing the image on ImageButton zero
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_zero">zero</string>
+
+    <!-- String describing the image on ImageButton pound
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_pound">pound</string>
+
+    <!-- String describing the Dial ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_dial_button">dial</string>
+
+    <!-- String describing the Delete/Backspace ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_delete_button">backspace</string>
+    
+    
+     <!-- Dialer text on Emergency Dialer -->
+    <!-- Emergency dialer: message displayed in an error dialog -->
+    <string name="dial_emergency_error">Call error. <xliff:g id="non_emergency_number">%s</xliff:g> is not a correct phone number!</string>
+    <!-- Emergency dialer: message displayed in an error dialog -->
+    <string name="dial_emergency_empty_error">Call error. Dial a correct number!</string>
+  <!-- Dialog title for the "radio enable" UI for emergency calls -->
+    <string name="emergency_enable_radio_dialog_title">Call</string>
+    <!-- Status message for the "radio enable" UI for emergency calls -->
+    <string name="emergency_enable_radio_dialog_message">Turning on radio\u2026</string>
+    
+     <!-- Title of the alert dialog. [CHAR LIMIT=NONE] -->
+    <string name="alert_dialog_close">Close the profile</string>
+    <!-- Title of the button to show in a alert dialog. [CHAR LIMIT=NONE] -->
+    <string name="alert_dialog_ok">OK</string>
+     <string name="alert_dialog_cancel">Cancel</string>
+    <!-- Title of the button to show in a alert dialog. [CHAR LIMIT=NONE] -->
+    <string name="close_profile">Close</string>
+    
+    <!-- Positive button label ("OK") used in several dialogs in the phone UI [CHAR LIMIT=10] -->
+    <string name="ok">OK</string>
+    
+     <string name="device_name">设备名称</string>
+      <string name="pin_password">PIN 码</string>
+       <string name="auto_connect">自动连接</string>
+        <string name="auto_answer">自动应答</string>
+        <string name="device_name_info">本机设备名称</string>
+      <string name="pin_password_info">其他设备连接时所需4位匹配码</string>
+       <string name="auto_connect_info">自动连接上一次连接的设备</string>
+
+         <!-- Description of the answer target in the Slide unlock screen of Phone. [CHAR LIMIT=NONE] -->
+    <string name="description_target_answer">Answer</string>
+    <!-- Description of the send_sms target in the Slide unlock screen of Phone. [CHAR LIMIT=NONE] -->
+    <string name="description_target_send_sms">Send SMS</string>
+    <!-- Description of the decline on target in the Slide unlock screen. [CHAR LIMIT=NONE] -->
+    <string name="description_target_decline">Decline</string>
+        
+    <!-- Description of AnswerFragment. [CHAR LIMIT=NONE] -->
+    <string name="respond_via_sms_custom_message">respond_via_sms_custom_message</string>
+    <string name="custom_message_cancel">custom_message_cancel</string>
+    <string name="custom_message_send">custom_message_send</string>
+    
+    <!-- Description of DialActivity. [CHAR LIMIT=NONE] -->
+    <string name="DialActivity_dial">拨打</string>
+    <string name="DialActivity_hangup">挂断</string>
+    <string name="DialActivity_phoneAnswer">接听</string>
+    <string name="DialActivity_phoneTransfer">转回手机</string>
+    <string name="DialActivity_phoneTransferBack">转回蓝牙</string>
+    
+    <!-- Description of Music. [CHAR LIMIT=NONE] -->
+    <string name="Music_Play">Play</string>
+    <string name="Music_Stop">Stop</string>
+    <string name="Music_Next">Next</string>
+    <string name="Music_Last">Last</string>
+    
+    <!-- Description of PhoneBook. [CHAR LIMIT=NONE] -->
+    <string name="Update_phone">更新电话簿</string>
+    <string name="Update_Call_Log">同步通话记录</string>
+    
+    <!-- Description of Device list. [CHAR LIMIT=NONE] -->
+    <string name="Device_list_info">蓝牙设备</string>
+    <string name="Device_searching">正在扫描</string>
+    <string name="Search_Device">扫描设备</string>
+    <string name="Device_Auto_Connect">自动连接</string>
+    <string name="Device_disconnect">断开连接</string>
+    <string name="Device_Searching">( 正在扫描... ) </string>
+    
+    <!-- Description of Anwser Fragment. [CHAR LIMIT=NONE] -->
+    <string name="Coming_info">来电</string>
+    <string name="Phone_name">联系人</string>
+    <string name="Phone_num">号码</string>
+    
+    <!-- Description of Call Fragment. [CHAR LIMIT=NONE] -->
+    <string name="Call_status">正在呼叫</string>
+    <string name="Call_talk">通话中</string>
+    <string name="Call_over">通过结束</string>
+    <string name="Call_people">联系人</string>
+    <string name="Call_people_num">号码</string>
+    
+    <!-- Description of CallLog Fragment. [CHAR LIMIT=NONE] -->
+    <string name="Call_in_title">已接电话</string>
+    <string name="Call_out_title">已拨电话</string>
+    <string name="Call_miss_title">未接电话</string>
+ 
+     <!-- info of activity. [CHAR LIMIT=NONE] -->
+    <string name="bt_connect_info">蓝牙设备连接</string>
+	<string name="bt_disconnect_info">蓝牙设备断开</string>
+	<string name="phone_name_info">联系人</string>
+	<string name="phone_hangup_info">通话结束</string>
+	<string name="disconnet_info">断开连接</string>
+    <string name="auto_connet_info">自动连接到上一次连接的设备</string>
+    <string name="mic_on_info">麦克风打开</string>
+    <string name="mic_off_info">麦克风关闭</string>
+    <string name="speaker_on_info">扬声器打开</string>
+    <string name="speaker_off_info">扬声器关闭</string>
+    
+    <string name="device_connected">已连接</string>
+    <string name="device_disconnected">未连接</string>
+    <string name="no_device_connected">无设备连接</string>
+    
+</resources>
